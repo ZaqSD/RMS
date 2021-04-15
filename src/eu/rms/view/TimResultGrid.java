@@ -9,5 +9,6 @@ public class TimResultGrid extends GridPane{
 		super();
 		this.setHgap(10);
 		this.add(new TimResult(), 0, 0);
+		
 	}
 }

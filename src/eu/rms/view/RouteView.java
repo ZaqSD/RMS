@@ -11,8 +11,6 @@ public class RouteView extends GridPane {
 		GridPane route = new GridPane();
 		TilePane buttons = new TilePane();
 		
-		
-		
 		this.add(topGrid, 0, 0);
 		this.add(infoBox, 1, 0, 2, 1);
 		this.add(route, 0, 1);

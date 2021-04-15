@@ -4,49 +4,85 @@ import javafx.scene.image.Image;
 
 public class IconButton {
 
-	final static Image magGlass = new Image(Logo.class.getResourceAsStream("../ressources/img/button/magnifying-glass-medium.png"));
-	final static Image magGlassWhite = new Image(Logo.class.getResourceAsStream("../ressources/img/button/magnifying-glass-medium-white.png"));
+	final static Image magGlass = new Image(
+			Logo.class.getResourceAsStream("../ressources/img/button/magnifying-glass-medium.png"));
+	final static Image magGlassWhite = new Image(
+			Logo.class.getResourceAsStream("../ressources/img/button/magnifying-glass-medium-white.png"));
 	final static Image cross1x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/cross-medium.png"));
-	final static Image cross2x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/cross-medium@2x.png"));
-	final static Image cross3x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/cross-medium@3x.png"));
+	final static Image cross2x = new Image(
+			Logo.class.getResourceAsStream("../ressources/img/button/cross-medium@2x.png"));
+	final static Image cross3x = new Image(
+			Logo.class.getResourceAsStream("../ressources/img/button/cross-medium@3x.png"));
 	final static Image clock1x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/clock-small.png"));
-	final static Image clock2x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/clock-small@2x.png"));
-	final static Image clock3x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/clock-small@3x.png"));
+	final static Image clock2x = new Image(
+			Logo.class.getResourceAsStream("../ressources/img/button/clock-small@2x.png"));
+	final static Image clock3x = new Image(
+			Logo.class.getResourceAsStream("../ressources/img/button/clock-small@3x.png"));
 	final static Image user1x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/user-small.png"));
 	final static Image user2x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/user-small@2x.png"));
 	final static Image user3x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/user-small@3x.png"));
-	final static Image qrcode1x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/qrcode-small.png"));
-	final static Image qrcode2x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/qrcode-small@2x.png"));
-	final static Image qrcode3x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/qrcode-small@3x.png"));
-	final static Image ticket1x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/tickets-class-small.png"));
-	final static Image ticket2x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/tickets-class-small@2x.png"));
-	final static Image ticket3x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/tickets-class-small@3x.png"));
-	final static Image routeEnd1x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/route-circle-end-small.png"));
-	final static Image routeEnd2x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/route-circle-end-small@2x.png"));
-	final static Image routeEnd3x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/route-circle-end-small@3x.png"));
-	final static Image timetable1x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/timetable-small.png"));
-	final static Image timetable2x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/timetable-small@2x.png"));
-	final static Image timetable3x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/timetable-small@3x.png"));
-	final static Image calendar1x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/calendar-small.png"));
-	final static Image calendar2x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/calendar-small@2x.png"));
-	final static Image calendar3x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/calendar-small@3x.png"));
-	final static Image display1x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/general-display-small.png"));
-	final static Image display2x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/general-display-small@2x.png"));
-	final static Image display3x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/general-display-small@3x.png"));
+	final static Image qrcode1x = new Image(
+			Logo.class.getResourceAsStream("../ressources/img/button/qrcode-small.png"));
+	final static Image qrcode2x = new Image(
+			Logo.class.getResourceAsStream("../ressources/img/button/qrcode-small@2x.png"));
+	final static Image qrcode3x = new Image(
+			Logo.class.getResourceAsStream("../ressources/img/button/qrcode-small@3x.png"));
+	final static Image ticket1x = new Image(
+			Logo.class.getResourceAsStream("../ressources/img/button/tickets-class-small.png"));
+	final static Image ticket2x = new Image(
+			Logo.class.getResourceAsStream("../ressources/img/button/tickets-class-small@2x.png"));
+	final static Image ticket3x = new Image(
+			Logo.class.getResourceAsStream("../ressources/img/button/tickets-class-small@3x.png"));
+	final static Image routeEnd1x = new Image(
+			Logo.class.getResourceAsStream("../ressources/img/button/route-circle-end-small.png"));
+	final static Image routeEnd2x = new Image(
+			Logo.class.getResourceAsStream("../ressources/img/button/route-circle-end-small@2x.png"));
+	final static Image routeEnd3x = new Image(
+			Logo.class.getResourceAsStream("../ressources/img/button/route-circle-end-small@3x.png"));
+	final static Image timetable1x = new Image(
+			Logo.class.getResourceAsStream("../ressources/img/button/timetable-small.png"));
+	final static Image timetable2x = new Image(
+			Logo.class.getResourceAsStream("../ressources/img/button/timetable-small@2x.png"));
+	final static Image timetable3x = new Image(
+			Logo.class.getResourceAsStream("../ressources/img/button/timetable-small@3x.png"));
+	final static Image calendar1x = new Image(
+			Logo.class.getResourceAsStream("../ressources/img/button/calendar-small.png"));
+	final static Image calendar2x = new Image(
+			Logo.class.getResourceAsStream("../ressources/img/button/calendar-small@2x.png"));
+	final static Image calendar3x = new Image(
+			Logo.class.getResourceAsStream("../ressources/img/button/calendar-small@3x.png"));
+	final static Image display1x = new Image(
+			Logo.class.getResourceAsStream("../ressources/img/button/general-display-small.png"));
+	final static Image display2x = new Image(
+			Logo.class.getResourceAsStream("../ressources/img/button/general-display-small@2x.png"));
+	final static Image display3x = new Image(
+			Logo.class.getResourceAsStream("../ressources/img/button/general-display-small@3x.png"));
 	final static Image gears1x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/gears-small.png"));
-	final static Image gears2x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/gears-small@2x.png"));
-	final static Image gears3x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/gears-small@3x.png"));
+	final static Image gears2x = new Image(
+			Logo.class.getResourceAsStream("../ressources/img/button/gears-small@2x.png"));
+	final static Image gears3x = new Image(
+			Logo.class.getResourceAsStream("../ressources/img/button/gears-small@3x.png"));
 	final static Image exit1x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/exit-small.png"));
 	final static Image exit2x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/exit-small@2x.png"));
 	final static Image exit3x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/exit-small@3x.png"));
-	final static Image info1x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/circle-information-small.png"));
-	final static Image info2x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/circle-information-small@2x.png"));
-	final static Image info3x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/circle-information-small@3x.png"));
+	final static Image info1x = new Image(
+			Logo.class.getResourceAsStream("../ressources/img/button/circle-information-small.png"));
+	final static Image info2x = new Image(
+			Logo.class.getResourceAsStream("../ressources/img/button/circle-information-small@2x.png"));
+	final static Image info3x = new Image(
+			Logo.class.getResourceAsStream("../ressources/img/button/circle-information-small@3x.png"));
 	final static Image house1x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/house-small.png"));
-	final static Image house2x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/house-small@2x.png"));
-	final static Image house3x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/house-small@3x.png"));
+	final static Image house2x = new Image(
+			Logo.class.getResourceAsStream("../ressources/img/button/house-small@2x.png"));
+	final static Image house3x = new Image(
+			Logo.class.getResourceAsStream("../ressources/img/button/house-small@3x.png"));
+	final static Image map1x = new Image(
+			Logo.class.getResourceAsStream("../ressources/img/button/location-pin-map-small.png"));
+	final static Image map2x = new Image(
+			Logo.class.getResourceAsStream("../ressources/img/button/location-pin-map-small@2x.png"));
+	final static Image map3x = new Image(
+			Logo.class.getResourceAsStream("../ressources/img/button/location-pin-map-small@3x.png"));
 
-	
 	public static Image getGears1x() {
 		return gears1x;
 	}
@@ -210,4 +246,17 @@ public class IconButton {
 	public static Image getMagglass() {
 		return magGlass;
 	}
+
+	public static Image getMap1x() {
+		return map1x;
+	}
+
+	public static Image getMap2x() {
+		return map2x;
+	}
+
+	public static Image getMap3x() {
+		return map3x;
+	}
+
 }

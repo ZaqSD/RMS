@@ -4,16 +4,15 @@ import java.util.Locale;
 import java.util.ResourceBundle;
 
 import eu.rms.controller.MenuDepartEventHandler;
+import eu.rms.controller.MenuMapsEventHandler;
 import eu.rms.controller.MenuSettingsEventHandler;
-import eu.rms.controller.MenuTicketShopEventHandler;
 import eu.rms.controller.MenuTimetableEventHandler;
 import eu.rms.controller.MenuWidgetEventHandler;
-import eu.rms.controller.exitEventHandler;
-import eu.rms.controller.langEventHandler;
+import eu.rms.controller.ExitEventHandler;
+import eu.rms.controller.LangEventHandler;
 import eu.rms.model.IconButton;
-import eu.rms.model.Line;
 import eu.rms.model.Logo;
-import javafx.application.Platform;
+import javafx.animation.FadeTransition;
 import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
@@ -22,6 +21,7 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.TilePane;
+import javafx.util.Duration;
 
 public class MenuView extends GridPane {
 
@@ -71,11 +71,11 @@ public class MenuView extends GridPane {
 		tile2.setPrefSize(tileWidth, tileHeight);
 		tile2.setOnAction(new MenuDepartEventHandler());
 		tile2.setGraphic(new ImgView(IconButton.getDisplay2x()));
-		Button tile3 = new Button("Ticketshop");
+		Button tile3 = new Button("Maps");
 		tile3.getStyleClass().add("menutile");
 		tile3.setPrefSize(tileWidth, tileHeight);
-		tile3.setGraphic(new ImgView(IconButton.getTicket2x()));
-		tile3.setOnAction(new MenuTicketShopEventHandler());
+		tile3.setGraphic(new ImgView(IconButton.getMap2x()));
+		tile3.setOnAction(new MenuMapsEventHandler());
 		Button tile4 = new Button("Widgets");
 		tile4.getStyleClass().add("menutile");
 		tile4.setPrefSize(tileWidth, tileHeight);
@@ -94,18 +94,23 @@ public class MenuView extends GridPane {
 		tile7.getStyleClass().add("menutile");
 		tile7.setPrefSize(tileWidth, tileHeight);
 		tile7.setGraphic(new ImgView(IconButton.getInfo2x()));
+		tile7.setOnAction(new EventHandler() {
+
+			@Override
+			public void handle(Event arg0) {
+				FadeTransition ft = new FadeTransition(Duration.millis(3000), tile6);
+				ft.setFromValue(1.0);
+				ft.setToValue(0.1);
+				ft.setAutoReverse(true);
+				ft.play();				
+			}
+			
+		});
 		Button tile8 = new Button("Exit & Logout");
 		tile8.setGraphic(new ImgView(IconButton.getExit2x()));
 		tile8.getStyleClass().add("menutile-exit");
 		tile8.setPrefSize(tileWidth, tileHeight);
-		tile8.setOnAction(new EventHandler() {
-
-			@Override
-			public void handle(Event event) {
-				System.out.println("kdhkdksgdkg");
-				Platform.exit();
-			}
-		});
+		tile8.setOnAction(new ExitEventHandler());
 
 		// LanguageTile
 		TilePane tile9 = new TilePane();
@@ -124,7 +129,7 @@ public class MenuView extends GridPane {
 		Button btnLangDe = new Button("DE");
 		btnLangDe.getStyleClass().add("btn-language-false");
 		btnLangDe.setPrefSize(langWidth, langHeight);
-		tile8.setOnAction(new langEventHandler());
+		btnLangDe.setOnAction(new LangEventHandler());
 
 		Button btnLangEn = new Button("EN");
 		btnLangEn.getStyleClass().add("btn-language-false");
@@ -155,9 +160,9 @@ public class MenuView extends GridPane {
 		this.add(tile9, 1, 0, 1, 1);
 		this.add(tile, 1, 1, 1, 1);
 		this.add(tile2, 0, 2, 1, 1);
-		this.add(tile3, 1, 2, 1, 1);
+		this.add(tile3, 0, 3, 1, 1);
 		this.add(tile4, 0, 1, 1, 1);
-		this.add(tile5, 0, 3, 1, 1);
+		this.add(tile5, 1, 2, 1, 1);
 		this.add(tile6, 1, 3, 1, 1);
 		this.add(tile7, 0, 4, 1, 1);
 		this.add(tile8, 1, 4, 1, 1);

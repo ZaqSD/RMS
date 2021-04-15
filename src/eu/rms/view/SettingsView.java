@@ -8,8 +8,9 @@ import eu.rms.controller.VisGreetingActionListener;
 import eu.rms.controller.VisTicketActionListener;
 import eu.rms.controller.VisTimetableActionListener;
 import eu.rms.controller.WidgetSetActionListener;
-import eu.rms.controller.langEventHandler;
+import eu.rms.controller.LangEventHandler;
 import eu.rms.model.DepartObservableList;
+import eu.rms.model.IconRoutelink;
 import eu.rms.model.SettingsObservableList;
 import eu.rms.model.Subtitle;
 import eu.rms.model.Title;
@@ -33,9 +34,9 @@ public class SettingsView extends GridPane {
 		//this.setHgap(15);
 
 		Title title = new Title("Settings");
-		Subtitle setAcc = new Subtitle("Account-Settings");
+		Subtitle setTheme = new Subtitle("Themes");
+		ThemesRow themesRow = new ThemesRow();
 		Subtitle setContent = new Subtitle("Content");
-		Label setAccount = new Label("Account Settings");
 		Subtitle setWidget = new Subtitle("Widgets");
 		Button btnSetAccount = new Button("Account-Settings");
 		btnSetAccount.getStyleClass().add("btn-primary");
@@ -255,24 +256,26 @@ public class SettingsView extends GridPane {
 		this.setVgap(15);
 	
 		this.add(title, 0, 0);
-		this.add(setContent, 0, 1);
-		this.add(setCurrency, 0, 2);
-		this.add(filler, 1, 2);
-		this.add(btnCurrency, 2, 2, 3, 1);
-		this.add(setWidget, 0, 3);
-		this.add(greeting, 0, 4);
-		this.add(timetable, 0, 5);
+		this.add(setTheme, 0, 1);
+		this.add(themesRow, 0, 2, 5, 1);
+		this.add(setContent, 0, 3);
+		this.add(setCurrency, 0, 4);
+		this.add(filler, 1, 4);
+		this.add(btnCurrency, 2, 4, 3, 1);
+		this.add(setWidget, 0, 5);
+		this.add(greeting, 0, 6);
+		this.add(timetable, 0, 7);
 		//this.add(departures, 0, 6);
-		this.add(tickets, 0, 6);
-		this.add(visGreeting, 2, 4);
-		this.add(visTimetable, 2, 5);
+		this.add(tickets, 0, 8);
+		this.add(visGreeting, 2, 6);
+		this.add(visTimetable, 2, 7);
 		//this.add(visDepartures, 2, 6);
-		this.add(visTickets, 2, 6);
-		this.add(settings1, 4, 4);
-		this.add(settings2, 4, 5);
+		this.add(visTickets, 2, 8);
+		this.add(settings1, 4, 6);
+		this.add(settings2, 4, 7);
 		//this.add(settings3, 4, 6);
-		this.add(settings4, 4, 6);
-		this.add(smallFiller1, 3, 4);
+		this.add(settings4, 4, 8);
+		this.add(smallFiller1, 3, 6);
 		SettingsObservableList.setTable(this);
 		
 	}

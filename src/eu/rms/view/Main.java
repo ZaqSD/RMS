@@ -47,31 +47,14 @@ public class Main extends Application {
 			Initial();
 			
 			BorderPane root = new BorderPane();
-			root.setStyle("-fx-background-color: #D2D2D2;");
-			/*
-			Dialog<Login> diaLogin = new LoginDialog<Login>();
-			Optional<Login> result = diaLogin.showAndWait();
-			if (result.isPresent()) {
-				System.out.println("Login is present");
-				//LoginCheck
-			} else
-				System.out.println("Login is present");
-			}
-			*/
-			GridPane mainGrid = new GridPane();
-			ContentPane content = new ContentPane();
-			MenuView menu = new MenuView();
-			menu.setPrefWidth(700);
-			//btn.setPrefSize(810, 775);
-			
-			mainGrid.setStyle("-fx-background-color: white;");
 
+			MainGrid mainGrid = new MainGrid();
+			
 			Scene login = new Scene(root, 2000, 1000);
 			login.getStylesheets().add(getClass().getResource("css/application.css").toExternalForm());
 			stage.setScene(login);
 			stage.show();
-			mainGrid.add(menu, 0, 0);
-			mainGrid.add(content, 1, 0);
+
 			root.setCenter(mainGrid);
 			
 		} catch (Exception e) {
@@ -87,6 +70,7 @@ public class Main extends Application {
 		new DepartView();
 		new SettingsView();
 		new WidgetView();
+		new MapsView();
 	}
 
 

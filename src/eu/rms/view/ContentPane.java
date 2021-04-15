@@ -40,10 +40,15 @@ public class ContentPane extends GridPane{
 		this.getChildren().clear();
 		this.add(ticketshopView, 0, 0);
 	}
+
+	public void Reload(MapsView mapsView) {
+		this.getChildren().clear();
+		this.getChildren().add(mapsView);			
+	}
 	
-	public void Reload(ContentPane content, DepartView departView) {
-		this.getChildren().removeAll();
-		this.getChildren().add(departView);		
+	public void Reload(TimResultOverview overview) {
+		this.getChildren().clear();
+		this.add(overview, 0, 0);
 	}
 	
 }

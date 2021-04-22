@@ -35,6 +35,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
+import javafx.scene.image.Image;
 import javafx.scene.control.ButtonBar.ButtonData;
 import javafx.scene.shape.*;
 import javafx.scene.text.Font;
@@ -53,6 +54,9 @@ public class Main extends Application {
 			Scene login = new Scene(root, 2000, 1000);
 			login.getStylesheets().add(getClass().getResource("css/application.css").toExternalForm());
 			stage.setScene(login);
+			stage.getIcons().add(new Image("file:Icon.png"));
+			stage.setTitle("RMS");
+			stage.setFullScreenExitHint(STYLESHEET_CASPIAN);
 			stage.show();
 
 			root.setCenter(mainGrid);

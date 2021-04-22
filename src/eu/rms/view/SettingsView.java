@@ -196,23 +196,29 @@ public class SettingsView extends GridPane {
 			
 		});
 		
-		Button settings1 = new Button("Settings");
-		settings1.getStyleClass().add("btn-secondary");
+		GridPane settings1 = new GridPane();
 		settings1.setPrefSize(btn1width, btn1height);
-		settings1.setStyle("-fx-font-size: 20px");
-		Button settings2 = new Button("Settings");
-		settings2.getStyleClass().add("btn-secondary");
+		GridPane settings2 = new GridPane();
 		settings2.setPrefSize(btn1width, btn1height);
-		settings2.setStyle("-fx-font-size: 20px");
-		Button settings3 = new Button("Settings");
-		settings3.getStyleClass().add("btn-secondary");
+		GridPane settings3 = new GridPane();
 		settings3.setPrefSize(btn1width, btn1height);
-		settings3.setStyle("-fx-font-size: 20px");
-		Button settings4 = new Button("Settings");
-		settings4.getStyleClass().add("btn-secondary");
+		GridPane settings4 = new GridPane();
 		settings4.setPrefSize(btn1width, btn1height);
-		settings4.setStyle("-fx-font-size: 20px");
 
+		Button up1 = new Button();
+		up1.setPrefSize(btn1width, btn1height);
+		Button up2 = new Button();
+		up2.setPrefSize(btn1width, btn1height);
+		Button up3 = new Button();
+		up3.setPrefSize(btn1width, btn1height);
+		Button down1 = new Button();
+		down1.setPrefSize(btn1width, btn1height);
+		Button down2 = new Button();
+		down2.setPrefSize(btn1width, btn1height);
+		Button down3 = new Button();
+		down3.setPrefSize(btn1width, btn1height);
+
+		//TODO Add Customization of Widget Assortment
 		/*
 		DropShadow shadow = new DropShadow();
 		//Adding the shadow when the mouse cursor is on

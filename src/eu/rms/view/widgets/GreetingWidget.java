@@ -6,6 +6,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
+import eu.rms.model.Title;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
@@ -34,8 +35,7 @@ public class GreetingWidget extends GridPane {
 				 scene = "Day";
 			}
 
-			Label sentence = new Label("Good " + scene);
-			sentence.setStyle("-fx-font-family: 'arial black'; -fx-font-size: 40px;");
+			Title sentence = new Title("Good " + scene);
 			
 			Label sentence3 = new Label("It is " + calendar.get(Calendar.HOUR_OF_DAY) + ":" + calendar.get(Calendar.MINUTE) + ", " + calendar.get(Calendar.DAY_OF_MONTH) + "/" + calendar.get(Calendar.MONTH)+1 + "/" + calendar.get(Calendar.YEAR));
 			Label sentence4 = new Label("It is " + calendar.get(Calendar.HOUR_OF_DAY) + ":0" + calendar.get(Calendar.MINUTE) + ", " + calendar.get(Calendar.DAY_OF_MONTH) + "/" + calendar.get(Calendar.MONTH)+1 + "/" + calendar.get(Calendar.YEAR));

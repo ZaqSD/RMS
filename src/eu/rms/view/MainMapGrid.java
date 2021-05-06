@@ -17,11 +17,11 @@ public class MainMapGrid extends GridPane{
 		this.setVgap(10);
 		
 		//tile7.setGraphic(new ImgView(IconButton.getInfo2x()));
-/*
+
 		ImgView mapImg = new ImgView(IconMap.getFvS());
 		mapImg.setFitHeight(240);
 		mapImg.setFitWidth(700);
-		*/
+		
 		Label name = new Label(" Long-Distance Network");
 		name.setPrefWidth(530);
 		name.getStyleClass().add("text-map");
@@ -31,7 +31,7 @@ public class MainMapGrid extends GridPane{
 		show.setPrefSize(150, 50);
 		show.setOnAction(new MapLoadMainEventHandler());
 		
-		//this.add(mapImg, 0, 0, 2, 1);
+		this.add(mapImg, 0, 0, 2, 1);
 		this.add(name, 0, 1, 1, 1);
 		this.add(show, 1, 1, 1, 1);
 	}

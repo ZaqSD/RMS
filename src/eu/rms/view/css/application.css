@@ -17,7 +17,7 @@
 
 .root{
     -fx-font-size: 18pt;
-    -fx-font-family: "helvetica new";
+    -fx-font-family: "arial";
 }
 
 .text-field {
@@ -46,7 +46,7 @@
 .btn-primary {
 	-fx-background-color: -fx-primary;
 	-fx-font-size: 25px;
-	-fx-font-weight: bold;
+	-fx-font-weight: 400;
     -fx-text-fill: -fx-text-2;
     -fx-background-radius: 0;
 }
@@ -54,7 +54,7 @@
 .btn-primary:hover {
 	-fx-background-color: -fx-primaryHover;
 	-fx-font-size: 25px;
-	-fx-font-weight: bold;
+	-fx-font-weight: 400;
     -fx-text-fill: -fx-text-2;
     -fx-background-radius: 0;
 }
@@ -76,7 +76,7 @@
 .btn-language-false {
 	-fx-background-color: -fx-bg-1;
 	-fx-font-size: 20px;
-	-fx-font-weight: bold;
+	-fx-font-weight: 700;
     -fx-text-fill: -fx-primary;
     -fx-background-radius: 0;
     -fx-border-color:-fx-primary;
@@ -88,7 +88,7 @@
 	-fx-background-color: -fx-primary-half;
 	-fx-background-insets: 0;
 	-fx-font-size: 20px;
-	-fx-font-weight: bold;
+	-fx-font-weight: 700;
     -fx-text-fill: -fx-primary;
     -fx-background-radius: 0;
     -fx-border-color:-fx-primary;
@@ -100,7 +100,7 @@
 	-fx-background-color: -fx-primary;
 	-fx-background-insets: 0;
 	-fx-font-size: 20px;
-	-fx-font-weight: bold;
+	-fx-font-weight: 700;
     -fx-text-fill: -fx-text-2;
     -fx-background-radius: 0;
     -fx-border-color:-fx-primary;
@@ -112,7 +112,7 @@
 	-fx-background-color: -fx-primary;
 	-fx-background-insets: 0;
 	-fx-font-size: 20px;
-	-fx-font-weight: bold;
+	-fx-font-weight: 700;
     -fx-text-fill: -fx-text-2;
     -fx-background-radius: 0;
     -fx-border-color: -fx-primary;
@@ -123,7 +123,7 @@
 .btn-currency-false {
 	-fx-background-color: -fx-bg-1;
 	-fx-font-size: 20px;
-	-fx-font-weight: bold;
+	-fx-font-weight: 400;
     -fx-text-alignment: center;
     -fx-text-fill: -fx-primary;
     -fx-background-radius: 0;
@@ -137,7 +137,7 @@
 	-fx-background-color: -fx-primary-half;
 	-fx-background-insets: 0;
 	-fx-font-size: 20px;
-	-fx-font-weight: bold;
+	-fx-font-weight: 400;
     -fx-text-alignment: center;
     -fx-text-fill: -fx-primary;
     -fx-background-radius: 0;
@@ -150,7 +150,7 @@
 	-fx-background-color: -fx-primary;
 	-fx-background-insets: 0;
 	-fx-font-size: 20px;
-	-fx-font-weight: bold;
+	-fx-font-weight: 700;
     -fx-text-alignment: center;
     -fx-text-fill: -fx-text-2;
     -fx-background-radius: 0;
@@ -163,7 +163,7 @@
 	-fx-background-color: -fx-primary;
 	-fx-background-insets: 0;
 	-fx-font-size: 20px;
-	-fx-font-weight: bold;
+	-fx-font-weight: 700;
     -fx-text-fill: -fx-text-2;
     -fx-background-radius: 0;
     -fx-border-color: -fx-primary;
@@ -174,7 +174,7 @@
 .dialog-pane .button {
 	-fx-background-color: -fx-primary;
 	-fx-font-size: 20px;
-	-fx-font-weight: bold;
+	-fx-font-weight: 400;
     -fx-text-fill: -fx-text-2;
     -fx-background-radius: 0;
 }
@@ -297,13 +297,13 @@
 
 .subtitle {
 	-fx-font-size: 30px;
-	-fx-font-family:"arial black";
+	-fx-font-weight: 700;
     -fx-fill: -fx-text-1;
 }
 
 .title {
 	-fx-font-size: 50px;
-	-fx-font-family:"arial black";
+	-fx-font-weight: 900;
 	-fx-padding: 6, 0, 0, 0;
 }
 
@@ -319,7 +319,7 @@
 .table-view .column-header .label{
    -fx-text-fill: -fx-text-1;
    -fx-font-size: 20px;
-   -fx-font-weight: bold; 
+   -fx-font-weight: 700; 
    -fx-alignment: CENTER_LEFT;
    -fx-padding: 0,15,0,15;
 }

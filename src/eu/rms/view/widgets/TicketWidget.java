@@ -1,6 +1,7 @@
 package eu.rms.view.widgets;
 
 import eu.rms.model.IconButton;
+import eu.rms.model.Title;
 import eu.rms.view.ImgView;
 import eu.rms.view.TicketList;
 import javafx.scene.control.Button;
@@ -15,8 +16,7 @@ public class TicketWidget extends GridPane{
 		this.setPrefWidth(700);
 		this.setHgap(10);
 		
-		Label title = new Label("Tickets");
-		title.setStyle("-fx-font-family: 'arial black'; -fx-font-size: 40px;");
+		Title title = new Title("Tickets");
 		
 		Button history = new Button("History");
 		history.getStyleClass().add("btn-secondary");

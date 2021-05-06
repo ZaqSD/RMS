@@ -1,5 +1,7 @@
 package eu.rms.view;
 
+import java.sql.SQLException;
+
 import eu.rms.model.ContentObservableList;
 import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
@@ -21,9 +23,9 @@ public class ContentPane extends GridPane{
 		this.add(timetableView, 0, 0);
 	}
 	
-	public void Reload(DepartView departView) {
+	public void Reload() throws SQLException {
 		this.getChildren().clear();
-		this.add(departView, 0, 0);
+		this.add(new DepartView(), 0, 0);
 	}
 	
 	public void Reload(SettingsView settingsView) {

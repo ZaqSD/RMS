@@ -1,5 +1,7 @@
 package eu.rms.controller;
 
+import java.sql.SQLException;
+
 import eu.rms.model.ContentObservableList;
 import eu.rms.model.DepartObservableList;
 import eu.rms.model.TimetableObservableList;
@@ -16,7 +18,12 @@ public class MenuDepartEventHandler implements EventHandler<ActionEvent> {
 
 		ContentPane content = ContentObservableList.getTable();
 		DepartView departView = DepartObservableList.getTable();
-		content.Reload(departView);
+		try {
+			content.Reload();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 	}
 

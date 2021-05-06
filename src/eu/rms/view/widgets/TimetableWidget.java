@@ -29,8 +29,7 @@ public class TimetableWidget extends GridPane{
 		btnTimSearch.getStyleClass().add("btn-primary");
 		btnTimSearch.setPrefSize(width, height);	
 		
-		Label title = new Label("Timetable - Now");
-		title.setStyle("-fx-font-family: 'arial black'; -fx-font-size: 40px;");
+		Title title = new Title("Timetable - Now");
 		
 		this.add(title, 0, 0, 3, 1);
 		this.add(textTimStart, 0, 1);

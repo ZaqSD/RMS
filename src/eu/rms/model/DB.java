@@ -5,9 +5,10 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.List;
 public class DB {
 
-	private static final String connection = "jdbc:mysql://localhost/RMS_APP?useSSL=false&allowPublicKryRetrieva=true";
+	private static final String connection = "jdbc:mysql://localhost/RMS_APP?useSSL=false&allowPublicKeyRetrieval=true";
 	private static final String user = "root";
 	private static final String password = "";
 	
@@ -23,21 +24,6 @@ public class DB {
 
 	public static String getPassword() {
 		return password;
-	}
-
-	public ResultSet Do(String string) {
-		Connection conn;
-		try {
-			conn = DriverManager .getConnection(connection, user, password);
-			Statement stmt = conn.createStatement();
-			ResultSet rs = stmt.executeQuery(string);
-			stmt.close();
-			conn.close();
-			return rs;
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-		return null;
 	}
 
 	public DB() {

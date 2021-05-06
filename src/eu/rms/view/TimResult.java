@@ -59,27 +59,27 @@ public class TimResult extends GridPane{
 
 		Label labDepartureTime = new Label("Departure Time");
 		labDepartureTime.setStyle(detailStyle);
-		labDepartureTime.setStyle("-fx-font-family: 'Arial Black'; -fx-font-size:15;");
+		labDepartureTime.setStyle("-fx-font-family:'arial'; -fx-font-size:15; -fx-font-width: 700;");
 		Label departureTime = new Label(datDepartureTime);
 		departureTime.setStyle(detailStyle);
 		Label labDeparturePlat = new Label("Platform");
 		labDeparturePlat.setStyle(detailStyle);
-		labDeparturePlat.setStyle("-fx-font-family: 'Arial Black'; -fx-font-size:15;");
+		labDeparturePlat.setStyle("-fx-font-family:'arial'; -fx-font-size:15; -fx-font-width: 700;");
 		Label departurePlat = new Label(Integer.toString(datPlatform));
 		departurePlat.setStyle(detailStyle);
 		Label labArrivalTime = new Label("Arrival Time");
 		labArrivalTime.setStyle(detailStyle);
-		labArrivalTime.setStyle("-fx-font-family: 'Arial Black'; -fx-font-size:15;");
+		labArrivalTime.setStyle("-fx-font-family:'arial'; -fx-font-size:15; -fx-font-width: 700;");
 		Label arrivalTime = new Label(datArrivalTime);
 		arrivalTime.setStyle(detailStyle);
 		Label labTravelTime = new Label("Traveltime");
 		labTravelTime.setStyle(detailStyle);
-		labTravelTime.setStyle("-fx-font-family: 'Arial Black'; -fx-font-size:15;");
+		labTravelTime.setStyle("-fx-font-family:'arial'; -fx-font-size:15; -fx-font-width: 700;");
 		Label travelTime = new Label(datTravelTime);
 		travelTime.setStyle(detailStyle);
 		Label labChanges = new Label("Changes");
 		labChanges.setStyle(detailStyle);
-		labChanges.setStyle("-fx-font-family: 'Arial Black'; -fx-font-size:15;");
+		labChanges.setStyle("-fx-font-family:'arial'; -fx-font-size:15; -fx-font-width: 700;");
 		Label changes = new Label(Integer.toString(datChanges));
 		changes.setStyle(detailStyle);
 

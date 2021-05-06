@@ -71,7 +71,6 @@ public class Main extends Application {
 	private void Initial() {
 		new Currency().getCurrency();
 		new TimetableView();
-		new DepartView();
 		new SettingsView();
 		new WidgetView();
 		new MapsView();

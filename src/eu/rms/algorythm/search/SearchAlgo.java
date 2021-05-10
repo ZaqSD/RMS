@@ -3,6 +3,10 @@ package eu.rms.algorythm.search;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
+import eu.rms.model.SearchResult;
+import eu.rms.model.TimResultGridObservableList;
+import eu.rms.view.TimResultGrid;
+
 public class SearchAlgo {
 
 	public SearchAlgo(String departure, String destination) {
@@ -23,5 +27,11 @@ public class SearchAlgo {
 
 		
 		
+	}
+	
+	public SearchAlgo() {
+		TimResultGrid timResultGrid = TimResultGridObservableList.getTable();
+		SearchResult[] searchResults = {new SearchResult("1101","Lausanne","Bern"), new SearchResult("3101","Zürich HB","Zürich Stadelhofen")};
+		timResultGrid.addResults(searchResults);
 	}
 }

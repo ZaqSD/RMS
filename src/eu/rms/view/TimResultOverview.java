@@ -10,7 +10,7 @@ import javafx.scene.layout.GridPane;
 
 public class TimResultOverview extends GridPane{
 
-	public TimResultOverview(int linId) {
+	public TimResultOverview(String string) {
 		
 		//TODO Get Array of Stations from DB
 		String[] lineStations = {"Genève","Lausanne","Fribourg/Freiburg","Bern","Zürich HB"};
@@ -23,7 +23,7 @@ public class TimResultOverview extends GridPane{
 		
 		informationView.getStyleClass().add("widget");
 		
-		Subtitle infLin = new Subtitle(" RE-"+linId);
+		Subtitle infLin = new Subtitle(" RE-"+string);
 		Label infDestination = new Label("Direction " + lastStation(lineStations));
 		
 		informationView.add(new ImgView(IconLine.getIc1()), 0, 0);

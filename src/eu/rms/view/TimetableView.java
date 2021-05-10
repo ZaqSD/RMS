@@ -39,6 +39,12 @@ public class TimetableView extends GridPane {
 		this.setPrefWidth(850);
 		//content.Reload(this);
 		TimetableObservableList.setTable(this);
+		
+	}
+
+	private void algoDisplay() {
+		
+		
 	}
 	
 }

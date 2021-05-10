@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Optional;
 
 import eu.rms.model.DB;
 import eu.rms.model.LineObservableList;
@@ -63,7 +64,8 @@ public class DepartBoard extends GridPane {
 	private void Load() {
 
 		GetDB("SELECT a.timTimeOnDeparture, a.timPlatform, b.staName, c.linType, c.linNr, c.linKey, c.linDestination FROM tStation b JOIN tStationTimetable a ON b.staKey=a.staId JOIN tLine c ON a.linId=c.linKey WHERE staName = '"
-				+ this.getStation() + "' AND a.timTimeOnDeparture IS NOT null ORDER BY a.timTimeOnDeparture ASC LIMIT 10;");
+				+ this.getStation()
+				+ "' AND a.timTimeOnDeparture IS NOT null ORDER BY a.timTimeOnDeparture ASC LIMIT 10;");
 	}
 
 	public String GetDB(String string) {
@@ -98,9 +100,9 @@ public class DepartBoard extends GridPane {
 
 	private void addLine(String lineKey, String lineType, String lineNr, String departureTime, String destination,
 			String platform, int count) {
-		
+
 		String lineName = lineType;
-		
+
 		if (lineNr != null) {
 			lineName = lineName + "-" + lineNr;
 		}
@@ -110,12 +112,13 @@ public class DepartBoard extends GridPane {
 		this.add(new Label("Destinations"), 2, 0);
 		this.add(new Label(), 3, 0);
 		this.add(new Label("Platform"), 4, 0);
-		
-		
-		
-		this.add(new ImgView(new Image(Logo.class.getResourceAsStream("../ressources/img/line/product-" + lineName.toLowerCase() + ".png"))), 0, count);
 
-		this.add(new Label(departureTime), 1, count);
+		this.add(
+				new ImgView(new Image(Logo.class
+						.getResourceAsStream("../ressources/img/line/product-" + lineName.toLowerCase() + ".png"))),
+				0, count);
+
+		this.add(new Label(departureTime.substring(0, departureTime.length() - 3)), 1, count);
 		this.add(new Label(destination), 2, count);
 		this.add(new Label(platform), 4, count);
 	}

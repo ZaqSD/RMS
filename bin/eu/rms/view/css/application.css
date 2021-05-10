@@ -295,10 +295,14 @@
 -fx-background-image : null  ;
 }
 
+.result-detail-text{
+	-fx-font-size: 18px;
+}
+
 .subtitle {
 	-fx-font-size: 30px;
 	-fx-font-weight: 700;
-    -fx-fill: -fx-text-1;
+    -fx-text-fill: -fx-text-1;
 }
 
 .title {

@@ -1,5 +1,6 @@
 package eu.rms.view;
 
+import eu.rms.algorythm.search.SearchAlgo;
 import eu.rms.model.IconButton;
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;
@@ -63,7 +64,10 @@ public class TimSearchGrid extends GridPane{
 		//Create Search
 		Button btnTimSearch = new Button("Search");
 		btnTimSearch.getStyleClass().add("btn-primary");
-		btnTimSearch.setPrefSize(400, 60);		
+		btnTimSearch.setPrefSize(400, 60);
+		btnTimSearch.setOnAction(λ -> {
+			new SearchAlgo();
+		});
 
 		//Add Timetable
 		this.add(textTimStart, 0, 0, 1, 1);

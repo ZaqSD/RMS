@@ -311,6 +311,34 @@
 	-fx-padding: 6, 0, 0, 0;
 }
 
+.scroll-pane {
+    -fx-background-color: white;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color: transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-opacity: 0.3;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: -fx-primary;
+    -fx-opacity: 0.5;
+    -fx-background-radius: 5em;
+}
+
 .table-view {
     -fx-background-color: transparent;
 }

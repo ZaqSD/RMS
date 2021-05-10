@@ -25,13 +25,13 @@ public class SearchAlgo {
 	private void Search(String departure, String destination, int hour, int minute, int day, int month, int year,
 			Boolean isNow) {
 
-		
-		
 	}
-	
+
 	public SearchAlgo() {
 		TimResultGrid timResultGrid = TimResultGridObservableList.getTable();
-		SearchResult[] searchResults = {new SearchResult("1101","Lausanne","Bern"), new SearchResult("3101","Zürich HB","Zürich Stadelhofen")};
-		timResultGrid.addResults(searchResults);
+		SearchResult[] searchResults1 = { new SearchResult("1101", "Lausanne", "Bern")};
+		SearchResult[] searchResults2 = { new SearchResult("3101", "Zürich HB", "Zürich Stadelhofen")};
+		timResultGrid.addResults(searchResults1);
+		timResultGrid.addResults(searchResults2);
 	}
 }

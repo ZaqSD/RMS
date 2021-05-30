@@ -1,6 +1,7 @@
 package eu.rms.view.widgets;
 
 import eu.rms.controller.MenuSettingsEventHandler;
+import eu.rms.controller.NoWidgetCloseEventHandler;
 import eu.rms.controller.WidgetSetActionListener;
 import eu.rms.model.IconButton;
 import eu.rms.view.ImgView;
@@ -26,11 +27,10 @@ public class NoWidget extends GridPane {
 		Button btnClose = new Button();
 		btnClose.setOnAction(new NoWidgetCloseEventHandler());
 		
-		filler.setPrefWidth(180);
+		filler.setPrefWidth(120);
 		btnClose.setGraphic(new ImgView(IconButton.getCross1x()));
 		btnClose.setStyle("-fx-background-color: transparent");
 		btnClose.setPrefWidth(btnClose.getHeight());
-		//TODO close Message
 		
 		DropShadow shadow = new DropShadow();
 		//Adding the shadow when the mouse cursor is on
@@ -49,9 +49,9 @@ public class NoWidget extends GridPane {
 		});
 		
 		btnAdd.getStyleClass().add("btn-primary");
-		this.add(message, 1, 1);
-		this.add(filler, 2, 1);
-		this.add(btnAdd, 3, 1);
-		this.add(btnClose, 4, 1);
+		this.add(btnClose, 1, 1);
+		this.add(message, 2, 1);
+		this.add(filler, 3, 1);
+		this.add(btnAdd, 2, 2);
 	}
 }

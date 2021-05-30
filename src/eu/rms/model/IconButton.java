@@ -82,7 +82,17 @@ public class IconButton {
 			Logo.class.getResourceAsStream("../ressources/img/button/location-pin-map-small@2x.png"));
 	final static Image map3x = new Image(
 			Logo.class.getResourceAsStream("../ressources/img/button/location-pin-map-small@3x.png"));
+	final static Image backarrow1x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/back-arrow.png"));
+	final static Image backarrow2x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/back-arrow@2x.png"));
+	final static Image backarrow3x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/back-arrow@3x.png"));
+	final static Image arrowdown1x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/arrow-down.png"));
+	final static Image arrowdown2x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/arrow-down@2x.png"));
+	final static Image arrowdown3x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/arrow-down@3x.png"));
+	final static Image calendarsmall1x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/arrow-down.png"));
+	final static Image calendarsmall2x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/arrow-down@2x.png"));
+	final static Image calendarsmall3x = new Image(Logo.class.getResourceAsStream("../ressources/img/button/arrow-down@3x.png"));
 
+	
 	public static Image getGears1x() {
 		return gears1x;
 	}
@@ -257,6 +267,42 @@ public class IconButton {
 
 	public static Image getMap3x() {
 		return map3x;
+	}
+
+	public static Image getBackarrow1x() {
+		return backarrow1x;
+	}
+
+	public static Image getBackarrow2x() {
+		return backarrow2x;
+	}
+
+	public static Image getBackarrow3x() {
+		return backarrow3x;
+	}
+
+	public static Image getArrowdown1x() {
+		return arrowdown1x;
+	}
+
+	public static Image getArrowdown2x() {
+		return arrowdown2x;
+	}
+
+	public static Image getArrowdown3x() {
+		return arrowdown3x;
+	}
+
+	public static Image getCalendarsmall1x() {
+		return calendarsmall1x;
+	}
+
+	public static Image getCalendarsmall2x() {
+		return calendarsmall2x;
+	}
+
+	public static Image getCalendarsmall3x() {
+		return calendarsmall3x;
 	}
 
 }

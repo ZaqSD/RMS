@@ -1,6 +1,10 @@
 package eu.rms.view.widgets;
 
+import eu.rms.algorythm.search.SearchAlgo;
+import eu.rms.model.ContentObservableList;
 import eu.rms.model.Title;
+import eu.rms.view.ContentPane;
+import eu.rms.view.timetable.TimResultDetailView;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -27,7 +31,10 @@ public class TimetableWidget extends GridPane{
 		
 		Button btnTimSearch = new Button("Search");
 		btnTimSearch.getStyleClass().add("btn-primary");
-		btnTimSearch.setPrefSize(width, height);	
+		btnTimSearch.setPrefSize(width, height);
+		btnTimSearch.setOnAction(λ -> {
+			new SearchAlgo();
+		});
 		
 		Title title = new Title("Timetable - Now");
 		

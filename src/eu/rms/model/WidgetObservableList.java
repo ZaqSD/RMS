@@ -1,8 +1,8 @@
 package eu.rms.model;
 
 import eu.rms.view.ContentPane;
-import eu.rms.view.TimetableView;
 import eu.rms.view.WidgetView;
+import eu.rms.view.timetable.TimetableView;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.TableView;

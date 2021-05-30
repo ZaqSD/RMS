@@ -4,8 +4,8 @@ import eu.rms.model.ContentObservableList;
 import eu.rms.model.TimetableObservableList;
 import eu.rms.model.WidgetObservableList;
 import eu.rms.view.ContentPane;
-import eu.rms.view.TimetableView;
 import eu.rms.view.WidgetView;
+import eu.rms.view.timetable.TimetableView;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 

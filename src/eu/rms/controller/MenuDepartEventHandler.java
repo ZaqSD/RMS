@@ -7,7 +7,7 @@ import eu.rms.model.DepartObservableList;
 import eu.rms.model.TimetableObservableList;
 import eu.rms.view.ContentPane;
 import eu.rms.view.DepartView;
-import eu.rms.view.TimetableView;
+import eu.rms.view.timetable.TimetableView;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 

@@ -1,7 +1,7 @@
 package eu.rms.model;
 
 import eu.rms.view.MapsView;
-import eu.rms.view.TimResultGrid;
+import eu.rms.view.timetable.TimResultGrid;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 

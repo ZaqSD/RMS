@@ -14,7 +14,7 @@ public class MenuMapsEventHandler implements EventHandler<ActionEvent> {
 
 		ContentPane content = ContentObservableList.getTable();
 		MapsView mapsView = MapsObservableList.getTable();
-		content.Reload(mapsView);
+		//content.Reload(mapsView);
 	}
 
 }

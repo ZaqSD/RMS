@@ -10,6 +10,7 @@ import eu.rms.model.ExitAlert;
 import eu.rms.model.Line;
 import eu.rms.model.Login;
 import eu.rms.model.User;
+import eu.rms.view.timetable.TimetableView;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -73,7 +74,7 @@ public class Main extends Application {
 		new TimetableView();
 		new SettingsView();
 		new WidgetView();
-		new MapsView();
+		//new MapsView();
 	}
 
 
